@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Uhost</title>
+  <title>uHost</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="favicon.png">
 </head>
+
 <body>
+  <header class="main-header">
+    <div>
+      <button class="toggle-button">
+        <span class="toogle-button__bar"></span>
+        <span class="toogle-button__bar"></span>
+        <span class="toogle-button__bar"></span>
+      </button>
+      <a href="#" class="main-header__brand">
+        <img src="./images/uhost-icon.png" alt="uHost - Your favorite hosting company">
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="product-overview">
+      <h1>Get the freedom you deserve.</h1>
+    </section>
+    <section id="plans">
+      <h1 class="section-title">Choose your plan</h1>
+      <div class="plan__list">
+        <article class="plan"></article>
+        <article class="plan plan--highlighted"></article>
+        <article class="plan"></article>
+      </div>
+    </section>
+    <section id="key-features"></section>
+  </main>
+  <footer class="main-footer">
+    <nav>
+      <ul class="main-footer__links">
+        <li class="main-footer__link">
+          <a href="#">Support</a>
+        </li>
+        <li class="main-footer__link">
+          <a href="#">Terms</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
   <script src="./js/app.js"></script>
 </body>
+
 </html>
