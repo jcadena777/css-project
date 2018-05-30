@@ -1,0 +1,31 @@
+{
+  "name": "css-project",
+  "version": "1.0.0",
+  "description": "A css web page project to practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcadena777/css-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcadena777/css-project/issues"
+  },
+  "homepage": "https://github.com/jcadena777/css-project#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "jshint": "^2.9.5",
+    "node-sass": "^4.9.0"
+  }
+}
