@@ -1,6 +1,6 @@
 // import dependencies
 import gulp from 'gulp';
-import sass from 'node-sass';
+import sass from 'gulp-sass';
 import babel from 'gulp-babel';
 import browserSync from 'browser-sync';
 
@@ -9,68 +9,68 @@ const server = browserSync.create();
 // setting browser sync
 
 function reload(done) {
-	server.reload();
-	done();
+  server.reload();
+  done();
 }
 
 function serve(done) {
-	server.init({
-		tunnel: true,
-		tunnel: 'pcgrin',
-		server: {
-			baseDir: './public'
-		}
-	});
-	done();
+  server.init({
+    tunnel: true,
+    tunnel: 'pcgrin',
+    server: {
+      baseDir: './public'
+    }
+  });
+  done();
 }
 
 // setting paths
 const scss_path = {
-	scripts: {
-		src: './dev/scss/*.scss',
-		dest: './public/css/'
-	}
+  scripts: {
+    src: './dev/scss/*.scss',
+    dest: './public/css/'
+  }
 };
 
 const js_path = {
-	scripts: {
-		src: './dev/js/*.js',
-		dest: './public/js/'
-	}
+  scripts: {
+    src: './dev/js/*.js',
+    dest: './public/js/'
+  }
 };
 
 const html_path = {
-	scripts: {
-		src: './dev/*.html',
-		dest: './public/'
-	}
+  scripts: {
+    src: './dev/*.html',
+    dest: './public/'
+  }
 };
 
 // gulp task
 function scss() {
-	return gulp
-		.src(scss_path.scripts.src, {
-			sourcemaps: true
-		})
-		.pipe(sass())
-		.pipe(gulp.dest(scss_path.scripts.dest));
+  return gulp
+    .src(scss_path.scripts.src, {
+      sourcemaps: true
+    })
+    .pipe(sass())
+    .pipe(gulp.dest(scss_path.scripts.dest));
 }
 
 function babel_task() {
-	return gulp
-		.src(js_path.scripts.src, {
-			sourcemaps: true
-		})
-		.pipe(babel())
-		.pipe(gulp.dest(js_path.scripts.dest));
+  return gulp
+    .src(js_path.scripts.src, {
+      sourcemaps: true
+    })
+    .pipe(babel())
+    .pipe(gulp.dest(js_path.scripts.dest));
 }
 
 function html() {
-	return gulp
-		.src(html_path.scripts.src, {
-			sourcemaps: true
-		})
-		.pipe(gulp.dest(html_path.scripts.dest));
+  return gulp
+    .src(html_path.scripts.src, {
+      sourcemaps: true
+    })
+    .pipe(gulp.dest(html_path.scripts.dest));
 }
 
 //watching
