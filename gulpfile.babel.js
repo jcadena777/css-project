@@ -27,7 +27,7 @@ function serve(done) {
 // setting paths
 const scss_path = {
   scripts: {
-    src: './dev/scss/*.scss',
+    src: './dev/scss/**/*.scss',
     dest: './public/css/'
   }
 };
