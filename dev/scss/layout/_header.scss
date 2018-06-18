@@ -1,0 +1,40 @@
+.main-header {
+  background-color: #2ddf5c;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 60;
+}
+
+.toggle-button {
+  width: 3rem;
+  vertical-align: middle;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.toggle-button__bar {
+  height: 0.2rem;
+  background-color: #000;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none;
+  font-weight: bold;
+  width: 20px;
+  img {
+    height: 2.5rem;
+    vertical-align: middle;
+  }
+}

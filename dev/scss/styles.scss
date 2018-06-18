@@ -1,0 +1,13 @@
+// === Import all modules of the project ===
+// === Config ===
+@import "config/config";
+// === Base styles ===
+@import "base/base";
+// === Layout ===
+@import "layout/grid";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+// === Modules ===
+@import "modules/buttons";
+// === Components ===
