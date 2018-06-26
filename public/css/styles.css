@@ -243,3 +243,73 @@ main {
 .open {
   display: block;
   opacity: 1; }
+
+main {
+  padding-top: 2rem; }
+
+.background {
+  background: url("../images/plans-background.jpg") center/cover;
+  width: 100%;
+  height: 100vh;
+  filter: grayscale(40%);
+  position: fixed;
+  z-index: -1; }
+
+.package {
+  width: 80%;
+  margin: 1rem 0;
+  border: 4px solid #0e4f1f;
+  border-left: none;
+  position: relative;
+  overflow: hidden; }
+  .package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem; }
+
+.package__title {
+  font-weight: bold;
+  margin: 1.2rem 0; }
+
+.package__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  background-color: #ff5454;
+  width: 12rem;
+  text-align: center;
+  font-weight: bold; }
+
+.package__subtitle {
+  color: #979797;
+  font-weight: bold;
+  margin: 1.2rem 0; }
+
+.package__info {
+  padding: 1rem;
+  border: 1px solid #0e4f1f;
+  color: #0e4f1f;
+  background-color: #fff;
+  font-size: 1.2rem; }
+
+#plus {
+  background-color: rgba(213, 255, 220, 0.95); }
+
+#free {
+  background-color: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 4px solid #0e4f1f;
+  text-align: right; }
+
+#premium {
+  background-color: rgba(14, 79, 31, 0.95); }
+  #premium .package__title {
+    color: #fff; }
+  #premium .package__subtitle {
+    color: #bbb; }
