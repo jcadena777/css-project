@@ -244,7 +244,7 @@ main {
   display: block;
   opacity: 1; }
 
-main {
+.main__packages {
   padding-top: 2rem; }
 
 .background {
@@ -313,3 +313,46 @@ main {
     color: #fff; }
   #premium .package__subtitle {
     color: #bbb; }
+
+.main__customers {
+  padding-top: 2.5rem; }
+
+.testimonial {
+  font-size: 1.2rem; }
+
+.testimonial__image-container {
+  width: 60%;
+  max-width: 40rem;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3); }
+
+.testimonial__image {
+  width: 100%; }
+
+.testimonial__info {
+  text-align: right;
+  padding: 0.9rem; }
+
+#customer-2.testimonial {
+  text-align: right; }
+
+#customer-2 .testimonial__info {
+  text-align: left; }
+
+.testimonial__name {
+  margin: 0.2rem;
+  color: #ff5454;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.testimonial__subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-weight: bold; }
+
+.testimonial__subtitle a {
+  text-decoration: none;
+  color: inherit; }
+
+.testimonial__text {
+  margin: 0.2rem; }
